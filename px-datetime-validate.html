@@ -270,6 +270,8 @@ limitations under the License.
       else if (invalidObj.pastMaxSelection) { return this.localize('Date is past max date'); }
       else if (invalidObj.beforeMinSelection) { return this.localize('Date is before min date'); }
       else {
+        console.log("************************** _determineValidationMessage:");
+        console.log(submittedMoment);
         var invalidAt = submittedMoment.invalidAt();
 
         if (invalidAt !== -1) {
