@@ -97,6 +97,7 @@ limitations under the License.
      * @param {element} this
      */
     _validateInput: function (format, tz) {
+      console.log("************************** _validateInput:");
       var inputArr = Polymer.dom(this.root).querySelectorAll('.cell'),
         inputStr = this._entryInputString(inputArr);
       if (inputStr) {
@@ -180,6 +181,7 @@ limitations under the License.
      * - FieldSame - If the new moment is the same as the old moment
      */
     _validateMomentObj: function (validatingMomentObj) {
+      console.log("************************** _validateMomentObj:");
       //If null is passed in clear the validation errors
       if (validatingMomentObj === null ) {
         this._validField(validatingMomentObj);
