@@ -1,3 +1,11 @@
+v3.3.3
+==================
+* Update validation message when editing with invalid input.
+
+v3.3.2
+==================
+* Update validation message when exiting editing.
+
 v3.3.0
 ==================
 * Added i18n support for date picker placeholder text via the `resources` property.
