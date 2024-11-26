@@ -107,7 +107,7 @@ limitations under the License.
           this.fire('px-moment-valid', { "element": this });
         }
         else {
-          var validationErrorMessage = this._determineValidationMessage(submittedMoment, new Object())
+          var validationErrorMessage = this._determineValidationMessage(inputMoment, new Object());
           this.set('validationErrorMessage', validationErrorMessage);
           this.set('isValid', false);
           this.toggleClass('validation-error', true, this.$.wrapper);
